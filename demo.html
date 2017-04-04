@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Demo controlx</title>
+	<link rel="stylesheet" href="">
+	<script language="javascript">
+		function volChange() {
+			var volText = document.getElementById("vol-value");
+			var vol= document.getElementById("Vol");
+			volText.value= vol.value;
+			return false;
+		}
+		function volValueChange() {
+			var volText = document.getElementById("vol-value");
+			var vol= document.getElementById("Vol");
+			vol.value=volText.value;
+			return false;
+
+		}
+	</script>
+</head>
+<body>
+<h2> Demo Using controls</h2>
+<form>
+StudentID: <input type ="text" name ="stuID" placeholder="StudentID123 /"> <br/> 
+Name: <input type ="text" name ="name" placeholder="Huynh Vo Gia Khang /"><br/>
+Birthday
+<input type="week">
+<!-- How old are you ? 
+<input type="radio" name ="age" value ="u23">Under 24&nbsp;&nbsp;
+<input type="radio" name ="age" value ="u24">Under 25&nbsp;&nbsp;
+<input type="radio" name ="age" value ="u25">Under 26&nbsp;&nbsp;
+<br/> 
+ -->
+ <br/>
+ Gender:<select name="gender" multiple>
+<option value="male">Male</option>
+<option value="female">Female</option>
+</select>
+<br/>
+What you want listen to music?
+<input type="checkbox" name ="1" value ="u23">Rap&nbsp;&nbsp;
+<input type="checkbox" name ="1" value ="u24">Ballad&nbsp;&nbsp;
+<input type="checkbox" name ="1" value ="u25">R&b &nbsp;&nbsp;
+<br/s>
+
+Description:<textarea name="Description"></textarea>
+<br/>
+Picture:<input type="file"/>
+	<br/>
+<input type="hidden" name="my-secret-data" value="this is my secret data">
+Input a number: <input type="num" name="num">
+Change volume <input id="Vol" type="range" min="0" max="100" value="30" name="vol" onchange="return volChange();">
+<input type="number" id="vol-value" onchange="return volValueChange();" >
+</br>
+<input type="submit" name =" btNok" value ="Create">
+<input type="reset" value ="Reset">	
+</form>
+	
+</body>
+</html>
