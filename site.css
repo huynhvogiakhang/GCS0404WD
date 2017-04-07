@@ -1,0 +1,29 @@
+.my-class{
+	   		width: 800px;
+	   		height: 250px;
+	   		text-align: justify;
+	   		border-radius: 10px;
+	   		border: 1px solid blue;
+	   		padding: 5px;
+			box-shadow: 2px 2px 2px #FF0000;
+	   }	
+.my-image{
+			width: 350px;
+			height: 350px;
+			border: 1px solid red;
+			margin-top: 20px;
+			font-size: 
+}
+
+img {
+	border: 1px solid red;
+}
+.test-font {
+	width: 800px;
+	margin: 40px 0 0 0;
+/*	font: normal bold small-caps 1.5em Arial;*/
+	line-height: 150%;
+	text-align: left;
+	text-indent: 1em;
+	text-transform: uppercase;	
+}
